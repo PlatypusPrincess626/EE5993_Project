@@ -82,7 +82,7 @@ optimizer = AdamW(model.parameters(), lr=2e-5)
 # Training Loop
 model.train()
 for epoch in range(epochs):
-    print(f"{epoch}/{epochs}")
+    print(f"{epoch+1}/{epochs}")
     total_loss = 0
     for batch in train_loader:
         input_ids = batch['input_ids'].to(device)
