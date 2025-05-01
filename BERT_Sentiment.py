@@ -33,7 +33,7 @@ train_texts, test_texts, train_labels, test_labels = train_test_split(
 # Parameters
 num_classes = len(label_encoder.classes_)
 batch_size = 16
-epochs = 10
+epochs = 20
 max_length = 128
 
 # Tokenizer and Model
