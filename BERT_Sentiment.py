@@ -148,9 +148,9 @@ new_df = pd.read_csv('combined_data.csv')
 new_df = new_df.dropna(subset=['statement'])  # Drop rows with missing text
 # Encode labels
 mental_label_encoder = LabelEncoder()
-df['Label'] = label_encoder.fit_transform(df['status'])
+new_df['Label'] = label_encoder.fit_transform(new_df['status'])
 
-mental_dataset = EmotionDataset(df['statement'].tolist(), df['Label'].tolist(), tokenizer, max_length)
+mental_dataset = EmotionDataset(new_df['statement'].tolist(), new_df['Label'].tolist(), tokenizer, max_length)
 mental_loader = DataLoader(mental_dataset, batch_size=batch_size)
 
 all_preds = []
