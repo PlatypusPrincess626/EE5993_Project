@@ -38,7 +38,7 @@ tokenizer.pad_token = tokenizer.eos_token  # GPT2 has no pad token by default
 # Parameters
 num_classes = len(label_encoder.classes_)
 batch_size = 16
-epochs = 3
+epochs = 10
 max_length = 128
 
 
@@ -170,15 +170,15 @@ for i in range(5):
 
 """
 Now predict across the dataset!
-"""   
+"""
 # Load dataset
 new_df = pd.read_csv('combined_data.csv')
 new_df = new_df.dropna(subset=['statement'])  # Drop rows with missing text
 # Encode labels
 mental_label_encoder = LabelEncoder()
-df['Label'] = label_encoder.fit_transform(df['status'])
+new_df['Label'] = label_encoder.fit_transform(new_df['status'])
 
-mental_dataset = EmotionDataset(df['statement'].tolist(), df['Label'].tolist(), tokenizer, max_length)
+mental_dataset = EmotionDataset(new_df['statement'].tolist(), new_df['Label'].tolist(), tokenizer, max_length)
 mental_loader = DataLoader(mental_dataset, batch_size=batch_size)
 
 all_preds = []
@@ -193,7 +193,7 @@ with torch.no_grad():
         labels_batch = batch['labels'].to(device)
 
         outputs = model(input_ids=input_ids, attention_mask=attention_mask)
-        logits = outputs['logits']
+        logits = outputs["logits"]
         probs = F.softmax(logits, dim=-1)
 
         preds = torch.argmax(probs, dim=-1)
@@ -214,6 +214,7 @@ model_path = "gpt2_sentiment_model.pt"
 torch.save(model.state_dict(), model_path)
 
 # Save label encoder to reuse label mapping
+import pickle
 with open("gpt2_sentiment_label_encoder.pkl", "wb") as f:
     pickle.dump(label_encoder, f)
 
