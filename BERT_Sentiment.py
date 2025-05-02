@@ -33,7 +33,7 @@ train_texts, test_texts, train_labels, test_labels = train_test_split(
 # Parameters
 num_classes = len(label_encoder.classes_)
 batch_size = 16
-epochs = 50
+epochs = 10
 max_length = 128
 
 # Tokenizer and Model
@@ -77,7 +77,7 @@ train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=batch_size)
 
 # Optimizer
-optimizer = AdamW(model.parameters(), lr=2e-5)
+optimizer = AdamW(model.parameters(), lr=2e-6)
 
 # Training Loop
 model.train()
@@ -175,19 +175,19 @@ with torch.no_grad():
         all_labels.extend(labels_batch.cpu().numpy())
         all_text.extend(text)
 
-with open('BERT_mental_dataset_predictions_50E.csv', 'w', newline='', encoding='utf-8') as csvfile:
+with open('BERT_mental_dataset_predictions_lrE6.csv', 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile, delimiter='|', quoting=csv.QUOTE_MINIMAL)
     writer.writerow(['prediction', 'label', 'text'])  # header
     for pred, label, text in zip(all_preds, all_labels, all_text):
         writer.writerow([pred, label, text])
 
 # Save model weights and label encoder after training
-model_path = "bert_sentiment_model_50E.pt"
+model_path = "bert_sentiment_model_lrE6.pt"
 torch.save(model.state_dict(), model_path)
 
 # Save label encoder to reuse label mapping
 import pickle
-with open("sentiment_label_encoder_50E.pkl", "wb") as f:
+with open("sentiment_label_encoder_lrE6.pkl", "wb") as f:
     pickle.dump(label_encoder, f)
 
 print(f"\nModel saved to {model_path}")
