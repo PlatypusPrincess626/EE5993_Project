@@ -8,6 +8,7 @@ from sklearn.metrics import accuracy_score, f1_score
 from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
+import pickle
 
 # Set random seeds for reproducibility
 torch.manual_seed(42)
@@ -33,7 +34,7 @@ train_texts, test_texts, train_labels, test_labels = train_test_split(
 # Parameters
 num_classes = len(label_encoder.classes_)
 batch_size = 16
-epochs = 3
+epochs = 10
 max_length = 128
 
 # Tokenizer and Model
@@ -139,3 +140,12 @@ true_emotions = label_encoder.inverse_transform(all_labels)
 # Example predictions
 for i in range(5):
     print(f"True: {true_emotions[i]} - Predicted: {predicted_emotions[i]} - Confidence: {all_confidences[i]:.2f}")
+    
+# Save model weights and label encoder after training
+model_path = "BERT_mental_model.pt"
+torch.save(model.state_dict(), model_path)
+
+# Save label encoder to reuse label mapping
+with open("BERT_mental_label_encoder.pkl", "wb") as f:
+    pickle.dump(label_encoder, f)
+print(f"\nModel saved to {model_path}")
