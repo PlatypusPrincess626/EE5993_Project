@@ -85,6 +85,7 @@ class EmotionDataset(Dataset):
             return_tensors='pt'
         )
         return {
+            'text': text,
             'input_ids': encoding['input_ids'].squeeze(),
             'attention_mask': encoding['attention_mask'].squeeze(),
             'labels': torch.tensor(label, dtype=torch.long)
