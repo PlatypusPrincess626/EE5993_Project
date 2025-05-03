@@ -26,6 +26,12 @@ df = df.dropna(subset=['statement'])  # Drop rows with missing text
 label_encoder = LabelEncoder()
 df['Label'] = label_encoder.fit_transform(df['status'])
 
+# Get the mapping
+label_mapping = dict(zip(label_encoder.classes_, label_encoder.transform(label_encoder.classes_)))
+
+# Print it
+print(label_mapping)
+
 # Train/Test Split
 train_texts, test_texts, train_labels, test_labels = train_test_split(
     df['statement'].tolist(), df['Label'].tolist(), test_size=0.2, random_state=42

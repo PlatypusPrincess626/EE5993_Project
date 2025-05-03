@@ -30,6 +30,12 @@ train_texts, test_texts, train_labels, test_labels = train_test_split(
     df['Text'].tolist(), df['Label'].tolist(), test_size=0.2, random_state=42
 )
 
+# Get the mapping
+label_mapping = dict(zip(label_encoder.classes_, label_encoder.transform(label_encoder.classes_)))
+
+# Print it
+print(label_mapping)
+
 # Parameters
 num_classes = len(label_encoder.classes_)
 batch_size = 16
