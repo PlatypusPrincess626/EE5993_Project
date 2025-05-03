@@ -58,8 +58,8 @@ with torch.no_grad():
     probs = F.softmax(logits, dim=1)
     mental_confidence, mental_predicted = torch.max(probs, dim=1)
 
-decoded_sentiment = sentiment_encoder.inverse_transform(sentiment_predicted.numpy())
-decoded_mental = mental_encoder.inverse_transform(mental_predicted.numpy())
+decoded_sentiment = sentiment_encoder.inverse_transform(sentiment_predicted.cpu().numpy())
+decoded_mental = mental_encoder.inverse_transform(mental_predicted.cpu().numpy())
 
 # Append predictions and confidence to DataFrame
 df_small["Predicted Sentiment"] = sentiment_predicted.numpy()
