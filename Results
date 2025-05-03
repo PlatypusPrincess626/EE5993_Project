@@ -1,0 +1,64 @@
+Using device: cuda
+1/10
+Epoch 1/10 - Loss: 2472.9196
+2/10
+Epoch 2/10 - Loss: 1700.7627
+3/10
+Epoch 3/10 - Loss: 1297.1775
+4/10
+Epoch 4/10 - Loss: 996.2850
+5/10
+Epoch 5/10 - Loss: 777.8536
+6/10
+Epoch 6/10 - Loss: 607.5264
+7/10
+Epoch 7/10 - Loss: 472.9820
+8/10
+Epoch 8/10 - Loss: 374.3645
+9/10
+Epoch 9/10 - Loss: 297.5214
+10/10
+Epoch 10/10 - Loss: 247.5160
+
+--- Evaluation ---
+Accuracy: 0.6313
+F1 Score (Macro): 0.6071
+Mean Confidence: 0.9100
+True: sadness - Predicted: sadness - Confidence: 0.63
+True: anger - Predicted: anger - Confidence: 0.97
+True: sadness - Predicted: sadness - Confidence: 1.00
+True: joy - Predicted: joy - Confidence: 1.00
+True: anger - Predicted: joy - Confidence: 0.99
+
+
+1/10
+Epoch 1/10 - Loss: 2161.8354
+2/10
+Epoch 2/10 - Loss: 1449.5506
+3/10
+Epoch 3/10 - Loss: 1149.3417
+4/10
+Epoch 4/10 - Loss: 910.4475
+5/10
+Epoch 5/10 - Loss: 723.0924
+6/10
+Epoch 6/10 - Loss: 552.5661
+7/10
+Epoch 7/10 - Loss: 426.3928
+8/10
+Epoch 8/10 - Loss: 335.5788
+9/10
+Epoch 9/10 - Loss: 267.3958
+10/10
+Epoch 10/10 - Loss: 220.1624
+
+--- Evaluation ---
+Accuracy: 0.7681
+F1 Score (Macro): 0.7404
+Mean Confidence: 0.9363
+True: Normal - Predicted: Normal - Confidence: 1.00
+True: Normal - Predicted: Normal - Confidence: 1.00
+True: Bipolar - Predicted: Bipolar - Confidence: 1.00
+True: Depression - Predicted: Depression - Confidence: 0.98
+True: Normal - Predicted: Normal - Confidence: 1.00
+
