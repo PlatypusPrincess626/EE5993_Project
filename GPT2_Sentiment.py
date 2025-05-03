@@ -41,7 +41,7 @@ tokenizer.pad_token = tokenizer.eos_token  # GPT2 has no pad token by default
 num_classes = len(label_encoder.classes_)
 batch_size = 16
 epochs = 10
-max_length = 128
+max_length = 256
 
 
 class GPT2ForClassification(GPT2PreTrainedModel):
