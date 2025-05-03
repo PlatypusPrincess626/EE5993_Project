@@ -25,7 +25,7 @@ with open("sentiment_label_encoder.pkl", "rb") as f:
     sentiment_encoder = pickle.load(f)
 
 # Define model again with correct number of labels
-mental_model = BertForSequenceClassification.from_pretrained('bert-base-uncased',num_labels=8 )
+mental_model = BertForSequenceClassification.from_pretrained('bert-base-uncased',num_labels=7 )
 # Load weights
 mental_model.load_state_dict(torch.load("BERT_mental_model.pt"))
 mental_model.to(device)
