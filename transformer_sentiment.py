@@ -11,8 +11,6 @@ import pickle
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-
-
 # Set random seed
 torch.manual_seed(42)
 np.random.seed(42)
@@ -53,7 +51,7 @@ with open("transformer_tokenizer.pkl", "wb") as f:
 
 # Convert text to sequences
 sequences = tokenizer.texts_to_sequences(df['Text'])
-X = pad_sequences(sequences, maxlen=128)
+X = pad_sequences(sequences, maxlen=256)
 y = df['Label'].values
 
 # Train-test split
@@ -95,12 +93,12 @@ class TransformerClassifier(nn.Module):
 
 # Initialize model
 model = TransformerClassifier(vocab_size=10000, embed_dim=128, nhead=4, hidden_dim=256,
-                              num_layers=2, num_classes=len(label_encoder.classes_), max_len=128)
+                              num_layers=2, num_classes=len(label_encoder.classes_), max_len=256)
 model.to(device)
 
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-5)
 
 # Training loop
 for epoch in range(10):
