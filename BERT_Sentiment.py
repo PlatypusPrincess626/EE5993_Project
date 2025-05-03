@@ -182,19 +182,19 @@ with torch.no_grad():
         all_labels.extend(labels_batch.cpu().numpy())
         all_text.extend(text)
 
-with open('BERT_mental_dataset_predictions_lrE6.csv', 'w', newline='', encoding='utf-8') as csvfile:
+with open('BERT_mental_dataset_predictions.csv', 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile, delimiter='|', quoting=csv.QUOTE_MINIMAL)
     writer.writerow(['prediction', 'label', 'text'])  # header
     for pred, label, text in zip(all_preds, all_labels, all_text):
         writer.writerow([pred, label, text])
 
 # Save model weights and label encoder after training
-model_path = "bert_sentiment_model_lrE6.pt"
+model_path = "bert_sentiment_model.pt"
 torch.save(model.state_dict(), model_path)
 
 # Save label encoder to reuse label mapping
 import pickle
-with open("sentiment_label_encoder_lrE6.pkl", "wb") as f:
+with open("sentiment_label_encoder.pkl", "wb") as f:
     pickle.dump(label_encoder, f)
 
 print(f"\nModel saved to {model_path}")
