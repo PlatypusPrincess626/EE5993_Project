@@ -38,7 +38,8 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 # Load dataset
 df = pd.read_csv('mental_health.csv')
-texts = df["text"].tolist()
+df_small = df.iloc[:100]
+texts = df_small["text"].tolist()
 
 sentiment_encode = tokenizer(texts, padding=True, truncation=True, return_tensors="pt")
 sentiment_encode = {key: val.to(device) for key, val in sentiment_encode.items()}
@@ -61,16 +62,16 @@ decoded_sentiment = sentiment_encoder.inverse_transform(sentiment_predicted.nump
 decoded_mental = mental_encoder.inverse_transform(mental_predicted.numpy())
 
 # Append predictions and confidence to DataFrame
-df["Predicted Sentiment"] = sentiment_predicted.numpy()
-df["Decoded Sentiment"] = decoded_sentiment
-df["Sentiment Confidence"] = sentiment_confidence.numpy()
+df_small["Predicted Sentiment"] = sentiment_predicted.numpy()
+df_small["Decoded Sentiment"] = decoded_sentiment
+df_small["Sentiment Confidence"] = sentiment_confidence.numpy()
 
-df["Predicted Mental"] = mental_predicted.numpy()
-df["Decoded Mental"] = decoded_mental
-df["Mental Confidence"] = mental_confidence.numpy()
+df_small["Predicted Mental"] = mental_predicted.numpy()
+df_small["Decoded Mental"] = decoded_mental
+df_small["Mental Confidence"] = mental_confidence.numpy()
 
 # Save to CSV
-df.to_csv("BERT_full_predictions.csv", index=False)
+df_small.to_csv("BERT_full_predictions.csv", index=False)
 print("Saved to mental_health_predictions.csv")
 
 
