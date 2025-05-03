@@ -62,13 +62,13 @@ with torch.no_grad():
 # decoded_mental = mental_encoder.inverse_transform(mental_predicted.cpu().numpy())
 
 # Append predictions and confidence to DataFrame
-df_small["Predicted Sentiment"] = sentiment_predicted.numpy()
+df_small["Predicted Sentiment"] = sentiment_predicted.cpu().numpy()
 # df_small["Decoded Sentiment"] = decoded_sentiment
-df_small["Sentiment Confidence"] = sentiment_confidence.numpy()
+df_small["Sentiment Confidence"] = sentiment_confidence.cpu().numpy()
 
-df_small["Predicted Mental"] = mental_predicted.numpy()
+df_small["Predicted Mental"] = mental_predicted.cpu().numpy()
 # df_small["Decoded Mental"] = decoded_mental
-df_small["Mental Confidence"] = mental_confidence.numpy()
+df_small["Mental Confidence"] = mental_confidence.cpu().numpy()
 
 # Save to CSV
 df_small.to_csv("BERT_full_predictions.csv", index=False)
