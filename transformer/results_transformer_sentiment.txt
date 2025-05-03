@@ -1,0 +1,15 @@
+Epoch 1/10 - Loss: 2771.1391
+Epoch 2/10 - Loss: 2691.6220
+Epoch 3/10 - Loss: 2628.5862
+Epoch 4/10 - Loss: 2560.4041
+Epoch 5/10 - Loss: 2485.2497
+Epoch 6/10 - Loss: 2415.2239
+Epoch 7/10 - Loss: 2347.6382
+Epoch 8/10 - Loss: 2286.9655
+Epoch 9/10 - Loss: 2231.7937
+Epoch 10/10 - Loss: 2182.1245
+
+--- Evaluation ---
+Accuracy: 0.4925
+F1 Score (Macro): 0.4360
+Mean Confidence: 0.4324
