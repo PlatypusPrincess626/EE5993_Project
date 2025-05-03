@@ -39,8 +39,8 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 # Load dataset
 df = pd.read_csv('mental_health.csv')
 texts = df["text"].tolist()
-sentiment_encode = sentiment_encoder(texts, padding=True, truncation=True, return_tensors="pt")
-mental_encode = mental_encoder(texts, padding=True, truncation=True, return_tensors="pt")
+sentiment_encode = tokenizer(texts, padding=True, truncation=True, return_tensors="pt")
+mental_encode = tokenizer(texts, padding=True, truncation=True, return_tensors="pt")
 
 with torch.no_grad():
     sentiment_outputs = sentiment_model(**sentiment_encode)
@@ -48,7 +48,7 @@ with torch.no_grad():
     probs = F.softmax(logits, dim=1)
     sentiment_confidence, sentiment_predicted = torch.max(probs, dim=1)
 
-    mental_outputs = mental_model(**sentiment_encode)
+    mental_outputs = mental_model(**mental_encode)
     logits = mental_outputs.logits
     probs = F.softmax(logits, dim=1)
     mental_confidence, mental_predicted = torch.max(probs, dim=1)
