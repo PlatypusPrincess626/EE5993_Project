@@ -20,6 +20,7 @@ print(f"Using device: {device}")
 
 # Load dataset
 df = pd.read_csv('emotion_dataset_raw.csv')
+df = df[~df["Label"].isin(["disgust", "shame"])]
 
 # Encode labels
 label_encoder = LabelEncoder()
