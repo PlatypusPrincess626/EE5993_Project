@@ -41,7 +41,7 @@ train_texts, test_texts, train_labels, test_labels = train_test_split(
 num_classes = len(label_encoder.classes_)
 batch_size = 16
 epochs = 10
-max_length = 128
+max_length = 256
 
 # Tokenizer and Model
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
