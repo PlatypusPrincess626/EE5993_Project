@@ -16,7 +16,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"Using device: {device}")
 
 # Define model again with correct number of labels
-sentiment_model = BertForSequenceClassification.from_pretrained('bert-base-uncased',num_labels=8 )
+sentiment_model = BertForSequenceClassification.from_pretrained('bert-base-uncased',num_labels=6 )
 # Load weights
 sentiment_model.load_state_dict(torch.load("bert_sentiment_model.pt"))
 sentiment_model.to(device)
