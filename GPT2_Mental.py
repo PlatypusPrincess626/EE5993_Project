@@ -176,5 +176,4 @@ torch.save(model.state_dict(), model_path)
 # Save label encoder to reuse label mapping
 with open("gpt2_mental_label_encoder.pkl", "wb") as f:
     pickle.dump(label_encoder, f)
-
 print(f"\nModel saved to {model_path}")
