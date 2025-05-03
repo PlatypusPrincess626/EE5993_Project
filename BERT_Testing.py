@@ -39,8 +39,12 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 # Load dataset
 df = pd.read_csv('mental_health.csv')
 texts = df["text"].tolist()
+
 sentiment_encode = tokenizer(texts, padding=True, truncation=True, return_tensors="pt")
+sentiment_encode = {key: val.to(device) for key, val in sentiment_encode.items()}
+
 mental_encode = tokenizer(texts, padding=True, truncation=True, return_tensors="pt")
+mental_encode = {key: val.to(device) for key, val in mental_encode.items()}
 
 with torch.no_grad():
     sentiment_outputs = sentiment_model(**sentiment_encode)
