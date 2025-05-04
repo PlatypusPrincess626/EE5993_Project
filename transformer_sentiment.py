@@ -92,7 +92,7 @@ class TransformerClassifier(nn.Module):
         return self.classifier(x)
 
 # Initialize model
-model = TransformerClassifier(vocab_size=30000, embed_dim=256, nhead=10, hidden_dim=1028,
+model = TransformerClassifier(vocab_size=30000, embed_dim=256, nhead=12, hidden_dim=1032,
                               num_layers=3, num_classes=len(label_encoder.classes_), max_len=256)
 model.to(device)
 
