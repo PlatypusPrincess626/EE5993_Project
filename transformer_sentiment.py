@@ -42,7 +42,7 @@ with open("transformer_sentiment_label_encoder.pkl", "wb") as f:
     pickle.dump(label_encoder, f)
 
 # Tokenization
-tokenizer = Tokenizer(num_words=10000, oov_token="<OOV>") #tokenizer to convert text to integer sequences, Words not in the top 10,000 will be mapped to <OOV> (out-of-vocab)
+tokenizer = Tokenizer(num_words=30000, oov_token="<OOV>") #tokenizer to convert text to integer sequences, Words not in the top 10,000 will be mapped to <OOV> (out-of-vocab)
 tokenizer.fit_on_texts(df['Text']) # word index dictionary
 
 # Save tokenizer
@@ -92,8 +92,8 @@ class TransformerClassifier(nn.Module):
         return self.classifier(x)
 
 # Initialize model
-model = TransformerClassifier(vocab_size=10000, embed_dim=128, nhead=4, hidden_dim=256,
-                              num_layers=2, num_classes=len(label_encoder.classes_), max_len=256)
+model = TransformerClassifier(vocab_size=10000, embed_dim=256, nhead=8, hidden_dim=512,
+                              num_layers=3, num_classes=len(label_encoder.classes_), max_len=256)
 model.to(device)
 
 # Loss and optimizer
