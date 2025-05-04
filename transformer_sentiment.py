@@ -10,6 +10,7 @@ import numpy as np
 import pickle
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+import csv
 
 # Set random seed
 torch.manual_seed(42)
@@ -92,7 +93,7 @@ class TransformerClassifier(nn.Module):
         return self.classifier(x)
 
 # Initialize model
-model = TransformerClassifier(vocab_size=30000, embed_dim=264, nhead=12, hidden_dim=1032,
+model = TransformerClassifier(vocab_size=30000, embed_dim=256, nhead=4, hidden_dim=512,
                               num_layers=3, num_classes=len(label_encoder.classes_), max_len=256)
 model.to(device)
 
@@ -101,7 +102,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4)
 
 # Training loop
-for epoch in range(250):
+for epoch in range(100):
     model.train()
     total_loss = 0
     for batch_x, batch_y in train_loader:
@@ -112,7 +113,7 @@ for epoch in range(250):
         loss.backward()
         optimizer.step()
         total_loss += loss.item()
-    print(f"Epoch {epoch+1}/250 - Loss: {total_loss:.4f}")
+    print(f"Epoch {epoch+1}/100 - Loss: {total_loss:.4f}")
     if total_loss < 50: 
         break
 
