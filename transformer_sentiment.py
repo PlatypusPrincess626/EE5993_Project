@@ -101,7 +101,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4)
 
 # Training loop
-for epoch in range(1000):
+for epoch in range(100):
     model.train()
     total_loss = 0
     for batch_x, batch_y in train_loader:
