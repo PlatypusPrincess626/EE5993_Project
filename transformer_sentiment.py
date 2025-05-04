@@ -172,7 +172,7 @@ decoded_preds = label_encoder.inverse_transform(predictions)
 with open('transformer_mental_dataset_predictions.csv', 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile, delimiter='|', quoting=csv.QUOTE_MINIMAL)
     writer.writerow(['prediction', 'label', 'text'])
-    for pred, text in zip(decoded_preds, new_df['status'].tolist(), new_df['statement'].tolist()):
-        writer.writerow([pred, text])
+    for pred, label, text in zip(decoded_preds, new_df['status'].tolist(), new_df['statement'].tolist()):
+        writer.writerow([pred, label, text])
 
 print("Prediction file saved: transformer_mental_dataset_predictions.csv")
