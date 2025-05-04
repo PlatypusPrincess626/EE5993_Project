@@ -92,16 +92,16 @@ class TransformerClassifier(nn.Module):
         return self.classifier(x)
 
 # Initialize model
-model = TransformerClassifier(vocab_size=10000, embed_dim=256, nhead=4, hidden_dim=512,
+model = TransformerClassifier(vocab_size=10000, embed_dim=128, nhead=4, hidden_dim=256,
                               num_layers=3, num_classes=len(label_encoder.classes_), max_len=256)
 model.to(device)
 
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.AdamW(model.parameters(), lr=1e-2)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3)
 
 # Training loop
-for epoch in range(100):
+for epoch in range(1000):
     model.train()
     total_loss = 0
     for batch_x, batch_y in train_loader:
@@ -113,6 +113,8 @@ for epoch in range(100):
         optimizer.step()
         total_loss += loss.item()
     print(f"Epoch {epoch+1}/100 - Loss: {total_loss:.4f}")
+    if total_loss < 1: 
+        break
 
 # Evaluation
 model.eval()
