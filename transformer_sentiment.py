@@ -98,7 +98,7 @@ model.to(device)
 
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.AdamW(model.parameters(), lr=1e-5)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4)
 
 # Training loop
 for epoch in range(100):
@@ -112,7 +112,7 @@ for epoch in range(100):
         loss.backward()
         optimizer.step()
         total_loss += loss.item()
-    print(f"Epoch {epoch+1}/10 - Loss: {total_loss:.4f}")
+    print(f"Epoch {epoch+1}/100 - Loss: {total_loss:.4f}")
 
 # Evaluation
 model.eval()
