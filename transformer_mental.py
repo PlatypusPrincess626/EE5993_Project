@@ -32,7 +32,7 @@ with open("transformer_mental_label_encoder.pkl", "wb") as f:
     pickle.dump(label_encoder, f)
 
 # Tokenization
-tokenizer = Tokenizer(num_words=10000, oov_token="<OOV>")
+tokenizer = Tokenizer(num_words=30000, oov_token="<OOV>")
 tokenizer.fit_on_texts(df['statement'])
 
 # Save tokenizer
@@ -41,7 +41,7 @@ with open("transformer_mental_tokenizer.pkl", "wb") as f:
 
 # Convert text to sequences
 sequences = tokenizer.texts_to_sequences(df['statement'])
-X = pad_sequences(sequences, maxlen=128)
+X = pad_sequences(sequences, maxlen=256)
 y = df['Label'].values
 
 # Train-test split
@@ -82,8 +82,8 @@ class TransformerClassifier(nn.Module):
         return self.classifier(x)
 
 # Initialize model
-model = TransformerClassifier(vocab_size=10000, embed_dim=128, nhead=4, hidden_dim=256,
-                              num_layers=2, num_classes=len(label_encoder.classes_), max_len=128)
+model = TransformerClassifier(vocab_size=30000, embed_dim=256, nhead=4, hidden_dim=512,
+                              num_layers=3, num_classes=len(label_encoder.classes_), max_len=256)
 model.to(device)
 
 # Loss and optimizer
@@ -91,7 +91,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4, weight_decay=0.01)
 
 # Training loop
-for epoch in range(20):
+for epoch in range(100):
     model.train()
     total_loss = 0
     for batch_x, batch_y in train_loader:

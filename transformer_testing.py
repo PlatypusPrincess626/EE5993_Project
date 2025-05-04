@@ -26,12 +26,12 @@ with open("transformer_mental_label_encoder.pkl", "rb") as f:
     mental_encoder = pickle.load(f)
 
 # Model parameters
-max_len = 128
-vocab_size = 10000
-embed_dim = 128
+max_len = 256
+vocab_size = 30000
+embed_dim = 256
 nhead = 4
-hidden_dim = 256
-num_layers = 2
+hidden_dim = 512
+num_layers = 3
 
 # Load models
 sentiment_model = SentimentModel(vocab_size, embed_dim, nhead, hidden_dim, num_layers,
