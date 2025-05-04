@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b5f644a-377a-4314-b2d6-0f361decdcbf" name="Changes" comment="More Batches">
-      <change beforePath="$PROJECT_DIR$/EE5993_Project_Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/EE5993_Project_Report.docx" afterDir="false" />
-    </list>
+    <list default="true" id="4b5f644a-377a-4314-b2d6-0f361decdcbf" name="Changes" comment="More Batches" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,30 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745887936802</updated>
-    </task>
-    <task id="LOCAL-00013" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746239445336</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1746239445336</updated>
-    </task>
-    <task id="LOCAL-00014" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746239690408</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1746239690408</updated>
-    </task>
-    <task id="LOCAL-00015" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746240006054</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1746240006054</updated>
     </task>
     <task id="LOCAL-00016" summary="More Batches">
       <option name="closed" value="true" />
@@ -568,7 +542,31 @@
       <option name="project" value="LOCAL" />
       <updated>1746386331818</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746393442342</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1746393442342</updated>
+    </task>
+    <task id="LOCAL-00063" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746394828429</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1746394828429</updated>
+    </task>
+    <task id="LOCAL-00064" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746396742642</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1746396742642</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

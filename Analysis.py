@@ -1,4 +1,5 @@
 import pandas as pd
+pd.set_option('display.max_columns', None)
 
 # Step 1: Read your CSV file
 df = pd.read_csv('BERT_mental_dataset_predictions.csv', sep='|')
