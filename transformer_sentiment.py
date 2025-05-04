@@ -112,7 +112,7 @@ for epoch in range(250):
         loss.backward()
         optimizer.step()
         total_loss += loss.item()
-    print(f"Epoch {epoch+1}/100 - Loss: {total_loss:.4f}")
+    print(f"Epoch {epoch+1}/250 - Loss: {total_loss:.4f}")
     if total_loss < 50: 
         break
 
