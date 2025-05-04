@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b5f644a-377a-4314-b2d6-0f361decdcbf" name="Changes" comment="More Batches" />
+    <list default="true" id="4b5f644a-377a-4314-b2d6-0f361decdcbf" name="Changes" comment="More Batches">
+      <change beforePath="$PROJECT_DIR$/EE5993_Project_Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/EE5993_Project_Report.docx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,19 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Analysis.executor": "Run",
-    "Python.BERT_Mental.executor": "Run",
-    "Python.BERT_Sentiment.executor": "Run",
-    "Python.Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/panlab/Documents/EE5993_Project",
-    "settings.editor.selected.configurable": "preferences.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BERT_Mental.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BERT_Sentiment.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/panlab/Documents/EE5993_Project&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.Analysis">
     <configuration name="Analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
@@ -173,102 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745887936802</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Added second save features">
-      <option name="closed" value="true" />
-      <created>1746129139598</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1746129139598</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added requirements.txt">
-      <option name="closed" value="true" />
-      <created>1746132994579</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1746132994579</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added requirements.txt">
-      <option name="closed" value="true" />
-      <created>1746136636423</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1746136636423</updated>
-    </task>
-    <task id="LOCAL-00004" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746139044884</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1746139044884</updated>
-    </task>
-    <task id="LOCAL-00005" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746142530505</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1746142530505</updated>
-    </task>
-    <task id="LOCAL-00006" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746149506685</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1746149506685</updated>
-    </task>
-    <task id="LOCAL-00007" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746153562095</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1746153562095</updated>
-    </task>
-    <task id="LOCAL-00008" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746161483659</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1746161483659</updated>
-    </task>
-    <task id="LOCAL-00009" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746164729670</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1746164729670</updated>
-    </task>
-    <task id="LOCAL-00010" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746205198028</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1746205198028</updated>
-    </task>
-    <task id="LOCAL-00011" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746207166252</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1746207166252</updated>
-    </task>
-    <task id="LOCAL-00012" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746233228468</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1746233228468</updated>
     </task>
     <task id="LOCAL-00013" summary="More Batches">
       <option name="closed" value="true" />
@@ -414,7 +320,255 @@
       <option name="project" value="LOCAL" />
       <updated>1746295796657</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746315478927</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1746315478927</updated>
+    </task>
+    <task id="LOCAL-00032" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746315812722</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1746315812722</updated>
+    </task>
+    <task id="LOCAL-00033" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746317212487</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1746317212487</updated>
+    </task>
+    <task id="LOCAL-00034" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746317355958</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1746317355958</updated>
+    </task>
+    <task id="LOCAL-00035" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746317951964</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1746317951964</updated>
+    </task>
+    <task id="LOCAL-00036" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746318716386</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1746318716386</updated>
+    </task>
+    <task id="LOCAL-00037" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746318864051</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1746318864051</updated>
+    </task>
+    <task id="LOCAL-00038" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746319021634</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1746319021634</updated>
+    </task>
+    <task id="LOCAL-00039" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746319158102</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1746319158102</updated>
+    </task>
+    <task id="LOCAL-00040" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746319241314</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1746319241314</updated>
+    </task>
+    <task id="LOCAL-00041" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746319448722</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1746319448722</updated>
+    </task>
+    <task id="LOCAL-00042" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746319842871</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1746319842871</updated>
+    </task>
+    <task id="LOCAL-00043" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746320276101</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1746320276101</updated>
+    </task>
+    <task id="LOCAL-00044" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746322673821</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1746322673821</updated>
+    </task>
+    <task id="LOCAL-00045" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746327311628</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1746327311628</updated>
+    </task>
+    <task id="LOCAL-00046" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746327462102</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1746327462102</updated>
+    </task>
+    <task id="LOCAL-00047" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746328523267</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1746328523267</updated>
+    </task>
+    <task id="LOCAL-00048" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746329601736</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1746329601736</updated>
+    </task>
+    <task id="LOCAL-00049" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746329620609</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1746329620609</updated>
+    </task>
+    <task id="LOCAL-00050" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746334768879</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1746334768879</updated>
+    </task>
+    <task id="LOCAL-00051" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746334810790</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1746334810790</updated>
+    </task>
+    <task id="LOCAL-00052" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746334981847</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1746334981847</updated>
+    </task>
+    <task id="LOCAL-00053" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746335071937</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1746335071937</updated>
+    </task>
+    <task id="LOCAL-00054" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746338066000</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1746338066000</updated>
+    </task>
+    <task id="LOCAL-00055" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746345088123</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1746345088124</updated>
+    </task>
+    <task id="LOCAL-00056" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746379742930</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1746379742930</updated>
+    </task>
+    <task id="LOCAL-00057" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746381069325</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1746381069325</updated>
+    </task>
+    <task id="LOCAL-00058" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746383160278</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1746383160278</updated>
+    </task>
+    <task id="LOCAL-00059" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746386186904</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1746386186904</updated>
+    </task>
+    <task id="LOCAL-00060" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746386279699</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1746386279699</updated>
+    </task>
+    <task id="LOCAL-00061" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746386331818</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1746386331818</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
