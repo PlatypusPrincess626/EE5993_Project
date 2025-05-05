@@ -91,7 +91,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4, weight_decay=0.01)
 
 # Training loop
-for epoch in range(100):
+for epoch in range(1000):
     model.train()
     total_loss = 0
     for batch_x, batch_y in train_loader:
@@ -102,7 +102,9 @@ for epoch in range(100):
         loss.backward()
         optimizer.step()
         total_loss += loss.item()
-    print(f"Epoch {epoch+1}/20 - Loss: {total_loss:.4f}")
+    print(f"Epoch {epoch+1}/1000 - Loss: {total_loss:.4f}")
+    if total_loss < 80: 
+        break
 
 # Evaluation
 model.eval()
