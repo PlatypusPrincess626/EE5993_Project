@@ -47,9 +47,9 @@ with open("transformer_mental_label_encoder.pkl", "rb") as f:
 # Model parameters
 max_len = 256
 vocab_size = 30000
-embed_dim = 128
+embed_dim = 256
 nhead = 8
-hidden_dim = 512
+hidden_dim = 1028
 num_layers = 3
 
 # Load models

@@ -174,30 +174,6 @@
       <option name="presentableId" value="Default" />
       <updated>1745887936802</updated>
     </task>
-    <task id="LOCAL-00016" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746240069111</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1746240069111</updated>
-    </task>
-    <task id="LOCAL-00017" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746240227764</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1746240227764</updated>
-    </task>
-    <task id="LOCAL-00018" summary="More Batches">
-      <option name="closed" value="true" />
-      <created>1746240624142</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1746240624142</updated>
-    </task>
     <task id="LOCAL-00019" summary="More Batches">
       <option name="closed" value="true" />
       <created>1746240933584</created>
@@ -566,7 +542,31 @@
       <option name="project" value="LOCAL" />
       <updated>1746396742642</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746402685164</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1746402685164</updated>
+    </task>
+    <task id="LOCAL-00066" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746402770134</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1746402770134</updated>
+    </task>
+    <task id="LOCAL-00067" summary="More Batches">
+      <option name="closed" value="true" />
+      <created>1746402803860</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1746402803860</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
